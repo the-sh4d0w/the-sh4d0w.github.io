@@ -24,10 +24,6 @@ footer {
     bottom: 0pt;
 }
 
-.icon {
-    color: blue;
-}
-
 .topnav {
     list-style: none;
     text-align: right;
@@ -52,6 +48,10 @@ footer {
 }
 
 .topnav a:hover {
+    color: blue;
+}
+
+.icon {
     color: blue;
 }
 
