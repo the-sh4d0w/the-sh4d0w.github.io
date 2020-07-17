@@ -51,7 +51,7 @@ footer {
     color: blue;
 }
 
-.topnav a:first {
+.topnav a:first-child {
     color: blue;
 }
 
