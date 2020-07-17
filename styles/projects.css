@@ -32,6 +32,9 @@ footer {
 
 .topnav li:first-child {
     float: left;
+}
+
+.topnav li:first-child a {
     color: blue;
 }
 
