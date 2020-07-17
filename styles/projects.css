@@ -32,6 +32,7 @@ footer {
 
 .topnav li:first-child {
     float: left;
+    color: blue;
 }
 
 .topnav li {
@@ -47,10 +48,6 @@ footer {
 }
 
 .topnav a:hover {
-    color: blue;
-}
-
-.topnav a:first-child {
     color: blue;
 }
 
