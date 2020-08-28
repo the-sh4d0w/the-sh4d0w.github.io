@@ -61,6 +61,7 @@ h1 {
 
 .projects {
     display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 50px;
 }
 
@@ -92,6 +93,6 @@ h1 {
     }
 
     .projects {
-        grid-auto-columns: auto;
+        grid-template-columns: auto;
     }
 }
