@@ -61,12 +61,11 @@ h1 {
 
 .projects {
     display: grid;
-    flex-direction: row;
+    grid-auto-flow: column;
     padding: 50px;
 }
 
 .projects figure {
-    display: inline-grid;
     margin: auto;
     text-align: center;
 }
