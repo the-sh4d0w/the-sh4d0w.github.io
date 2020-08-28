@@ -60,12 +60,13 @@ h1 {
 }
 
 .projects {
-    display: flex;
+    display: grid;
     flex-direction: row;
     padding: 50px;
 }
 
 .projects figure {
+    display: inline-grid;
     margin: auto;
     text-align: center;
 }
