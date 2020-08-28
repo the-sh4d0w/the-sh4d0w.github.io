@@ -62,7 +62,7 @@ h1 {
 .projects {
     display: flex;
     flex-direction: row;
-    padding-top: 300px;
+    padding: 50px;
 }
 
 .projects figure {
