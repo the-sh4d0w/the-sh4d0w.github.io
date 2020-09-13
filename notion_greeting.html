@@ -13,7 +13,7 @@
         color: #FFFFFF
     }
 </style>
-<div id="greeting"></div>
+<h1 id="greeting"></h1>
 <script>
     var weekday = new Array(7);
     weekday[0] = "Sonntag";
@@ -40,5 +40,5 @@
         greet = 'Guten Abend.';
 
     document.getElementById('greeting').innerHTML =
-        greet += `<div id="date">Heute ist ${date}.</div>`;
+        greet += "<br>Heute ist " + date + ".";
 </script>
