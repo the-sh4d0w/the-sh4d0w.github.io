@@ -26,17 +26,20 @@
 
     var today = new Date();
     var hrs = today.getHours();
+    var min = today.getMinutes();
     var dayOfWeek = weekday[today.getDay()];
     var date = dayOfWeek + ", der " + today.getDate() + "." + (today.getMonth() + 1) + '.' + today.getFullYear();
 
     var greet;
 
     if (hrs < 8)
-        greet = 'Guten Morgen.';
+        greet = 'Guten Morgen';
     else if (hrs >= 8 && hrs <= 20)
-        greet = 'Guten Tag.';
+        greet = 'Guten Tag';
     else if (hrs >= 20 && hrs <= 24)
-        greet = 'Guten Abend.';
+        greet = 'Guten Abend';
+
+    greet += ", es ist " + hrs + ":" + min + " Uhr.";
 
     document.getElementById('greeting').innerHTML =
         greet += "<br>Heute ist " + date + ".";
