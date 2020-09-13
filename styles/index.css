@@ -8,19 +8,13 @@ section {
 }
 
 .mybutton {
-    background: blue;
+    background: #002642;
     padding: 5px;
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     border-radius: 6px;
 }
 
 .mybutton:hover {
-    background: rgb(43, 43, 43);
-}
-
-@media screen and (max-width: 600px) {
-    .topnav li {
-        font-size: 20px;
-    }
+    background: #0C617B;
 }

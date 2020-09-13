@@ -3,34 +3,28 @@ html {
 }
 
 body {
-    background: rgb(58, 58, 58);
+    background: #474747;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    color: #FFFFFF;
     margin: 0;
     padding: 0;
     font-size: 20px;
 }
 
 header {
-    background: black;
+    background: #002642;
     background-attachment: scroll;
     position: fixed;
     width: 100%;
 }
 
-footer {
-    margin: 2px;
-    text-align: center;
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    position: fixed;
-    bottom: 0pt;
+a {
+    text-decoration: none;
 }
 
 .topnav {
     list-style: none;
     text-align: right;
-    margin: 0px;
     padding: 0.5vh 0.5vw 0.5vh 0.5vw;
 }
 
@@ -38,22 +32,23 @@ footer {
     float: left;
 }
 
-.topnav li:first-child a {
-    color: blue;
-}
-
 .topnav li {
     display: inline-block;
-    padding-right: 7%;
-    margin: 10px 0 0 0;
+    margin: 0 10px 0 0;
     font-size: 3.5vw;
 }
 
 .topnav a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
 }
 
 .topnav a:hover {
-    color: blue;
+    color: #189CB4;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav li {
+        font-size: 20px;
+    }
 }
