@@ -1,0 +1,35 @@
+<style>
+    * {
+        background: #2F3437;
+        color: #FFFFFF
+    }
+</style>
+<div id="greeting"></div>
+<script>
+    var weekday = new Array(7);
+    weekday[0] = "Sonntag";
+    weekday[1] = "Montag";
+    weekday[2] = "Dienstag";
+    weekday[3] = "Mittwoch";
+    weekday[4] = "Donnerstag";
+    weekday[5] = "Freitag";
+    weekday[6] = "Sonntag";
+
+
+    var today = new Date();
+    var hrs = today.getHours();
+    var dayOfWeek = weekday[today.getDay()];
+    var date = dayOfWeek + ", der " + today.getDate() + "." + (today.getMonth() + 1) + '.' + today.getFullYear();
+
+    var greet;
+
+    if (hrs < 8)
+        greet = 'Guten Morgen.';
+    else if (hrs >= 8 && hrs <= 20)
+        greet = 'Guten Tag.';
+    else if (hrs >= 20 && hrs <= 24)
+        greet = 'Guten Abend.';
+
+    document.getElementById('greeting').innerHTML =
+        greet += `<div id="date">Heute ist ${date}.</div>`;
+</script>
