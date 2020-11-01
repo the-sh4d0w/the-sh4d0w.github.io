@@ -44,11 +44,11 @@ a {
 }
 
 .topnav li:first-child a{
-    color: #000000;
+    color: #1EBFDC;
 }
 
 .topnav a:hover {
-    color: #189CB4;
+    color: #1EBFDC;
 }
 
 @media screen and (max-width: 600px) {
