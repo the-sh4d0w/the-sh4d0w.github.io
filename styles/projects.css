@@ -1,12 +1,7 @@
-h1 {
-    text-align: center;
-    padding: 25vh 0 0 0;
-}
-
 .projects {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 50px;
+    padding: 25vh 0 0 0;
 }
 
 .projects figure {
