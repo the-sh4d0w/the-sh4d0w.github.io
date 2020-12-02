@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+<meta lang="de-DE">
+<title>Dokumentation</title>
+<h1>Smart Mirror API Dokumentation</h1>
+<h2>Authentifizierung</h2>
+<p>Benutzername: admin</p>
+<p>Passwort: admin</p>
+<h2>GET Requests</h2>
+<h3>Widgets</h3>
+<p>URL: <code>/api/widgets</code></p>
+<p>Antwort: <code>{"code": 200, "description": "OK", "result": {"events": 1, "greeting": 1, "news": 1, "time": 1, "weather": 1}}</code></p>
+<p>Beschreibung: Gibt den Status aller Widgets zurück.</p>
+<h3>Events</h3>
+<p>URL: <code>/api/events/[user]</code></p>
+<p>Parameter: <code>user: Name des Benutzers</code></p>
+<p>Antwort: <code>{"code": 200, "description": "OK", "result": {"code": 200, "description": "OK", "result": {"Test": "2020-09-09"}}}</code></p>
+<p>Beschreibung: Gibt alle Events für den angegebenen Nutzer zurück.</p>
+<h3>Users</h3>
+<p>URL: <code>/api/users</code></p>
+<p>Antwort: <code>{"code": 200, "description": "OK", "result": ["john", "jane"]}</code></p>
+<p>Beschreibung: Gibt die Namen aller Nutzer zurück.</p>
+<h2>POST Requests</h2>
+<h3>Widgets</h3>
+<p>URL: <code>/api/widgets</code></p>
+<p>JSON: <code>{"weather": 0}</code></p>
+<p>Antwort: <code>{"code": 200, "description": "OK", "result": {}}</code></p>
+<p>Beschreibung: Ändert den jeweiligen angegebenen Status zu den angegebenen Widgets.</p>
+<h3>Events</h3>
+<p>URL: <code>/api/events/[user]</code></p>
+<p>Parameter: <code>user: Name des Benutzers</code></p>
+<p>JSON: <code>{"Test": "2020-09-09"}</code></p>
+<p>Antwort: <code>{"code": 201, "description": "Created", "result": {}}</code></p>
+<p>Beschreibung: Fügt den angegebenen Termin am angegebenen Datum hinzu fpür den angegebenen Nutzer hinzu.</p>
+<h3>Users</h3>
+<p>URL: <code>/api/users/[user]</code></p>
+<p>JSON: <code>{"john": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQYV2NgYPj/HwADAgH/ybKt7gAAAABJRU5ErkJgggAA"}</code></p>
+<p>Antwort: <code>{"code": 201, "description": "Created", "result": {}}</code></p>
+<p>Beschreibung: Fügt den angegebenen Nutzer mit angegebenen Bild hinzu.</p>
+<h2>DELETE Requests</h2>
+<h3>Events</h3>
+<p>URL: <code>/api/events/[user]</code></p>
+<p>Parameter: <code>user: Name des Benutzers</code></p>
+<p>JSON: <code>{"Test": "2020-09-09"}</code></p>
+<p>Antwort: <code>{"code": 201, "description": "Created", "result": {}}</code></p>
+<p>Beschreibung: Löscht den angegebenen Termin am angegebenen Datum für den angegebenen Nutzer.</p>
+<br>
+<h4>Achtung:</h4>
+<p>Vor die oben genannte URL immer die IP des Servers (Raspberry Pi) mit Protkoll anfügen (Bsp.: http://127.0.0.1).<br>Alle Antworten sind Beispiele.</p>
+<a href="https://http.cat">HTTP Status Codes</a>
